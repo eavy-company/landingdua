@@ -1,8 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Serenique Spa - Wellness & Luxury Spa Landing Page
+
+Serenique Spa is a premium, aesthetic landing page for a wellness and luxury spa, built using **Next.js 16** and **Tailwind CSS**. It emphasizes a calm, elegant atmosphere by combining **Plus Jakarta Sans** and **Instrument Serif** Google Fonts.
+
+The website also incorporates **smooth scrolling** (via Lenis) and **scroll/reveal animations** (via GSAP) to deliver an engaging user experience seamlessly across the site's various sections.
+
+## Features & Technologies Used
+
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS (with specific aesthetic brand colors, `brand-brown`, `brand-olive`, `brand-light`)
+- **Typography:** `Plus Jakarta Sans` & `Instrument Serif`
+- **Iconography:** Lucide-React
+- **Animations:** GSAP (GreenSock Animation Platform) for entrance animations.
+- **Smooth Scrolling:** Lenis smooth scrolling integration.
+- **Dynamic CSS:** Marquee infinite-scroll animation native to standard CSS.
 
 ## Getting Started
 
-First, run the development server:
+First, ensure you have your dependencies installed:
+
+```bash
+npm install
+# or
+bun install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +38,20 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The UI components have all been modularized to ensure easy maintenance and scalability:
 
-## Learn More
+- `SmoothScroll.tsx`: Wrapper wrapping the children layout with Lenis smoothing enabled.
+- `Navbar.tsx`: Custom-crafted transparent-to-opaque sticky navbar. 
+- `Hero.tsx`: Dynamic section containing a fullscreen mask-mix video/image overlay using Next.js images.
+- `Services.tsx`: Interactive display layout utilizing hover-triggered animations.
+- `Process.tsx`: A timeline/steps component to layout the spa's services.
+- `FAQ.tsx`: An interactive question/answer accordion implementation.
+- ...and many more (`Logos`, `Pricing`, `Testimonials`, `Therapists`, `About`, `CTA`, `Footer`).
 
-To learn more about Next.js, take a look at the following resources:
+Enjoy the tranquility and aesthetics!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project References
+- [Webflow](https://serenique-template.webflow.io/)
